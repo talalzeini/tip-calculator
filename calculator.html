@@ -16,7 +16,7 @@
 
 
 
-<h1>Tip Calculator</h1>
+<h1>How was your meal?</h1>
 
 <div class="" id="calculator">
 
@@ -24,13 +24,14 @@
 
 <label>
     How much was your bill?
-    $ <input type="text" id="billAmount">
+    <input type="text"  id="billAmount" placeholder="$">
 </label>
 <label>
-    How was your servie?
-    $ <select id="serviceQuality">
+    How was your service today?
+ <select id="serviceQuality" style="
+ padding-left: 30px;" >
 
-<option disabled selected value="0"> -- Choose an Option -- </option>
+<option class= "selected" disabled selected value="0">Choose an Option</option>
 <option  value="0.3"> 30% - Oustanding </option>
 <option  value="0.2"> 20% - Good </option>
 <option  value="0.15"> 15% - Okay </option>
@@ -42,10 +43,10 @@
 </label>
 
 <label>
-    How many people are sharing the bill?
-    $ <input type="text" id="totalPeople"> people
+    Number of People
+    <input type="text"  id="totalPeople">
 </label>
-<button type="button" id="calculate" onclick="calculateTip()">Calculate!</button>
+<button type="button" id="calculate" onclick="calculateTip()">Calculate</button>
 
 
 </form>
@@ -58,7 +59,7 @@
 <div id="totalTip">
 
 <sup>$</sup><span id="tip">0.00</span>
-<small id="each"> each </small>
+<small id="each"> Each </small>
 
 </div>
 

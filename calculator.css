@@ -1,58 +1,77 @@
 body{
 
-background:red;
-
-background-size:cover;
-
+background:url(food.jpg) fixed center no-repeat;
+background-size:100%;
+background-size: cover;
+font-family: 'Courier New', Courier, monospace;
 color:white;
-
+overflow: hidden;
 
 }
 #container{
 width:400px;
-margin:40px auto 0;
+margin: 10% auto;
 padding:50px;
+background: rgba(1,1,1,0.8);
 box-sizing: border-box;
-box-shadow: 0 10px 15px -8px #000;
-border-radius:5px;
+border-radius:30px;
 text-align:center;
--webkit-border-radius:5px;
--moz-border-radius:5px;
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+animation: 1s fadeIn;
 }
 h1{
     margin: 0 0 20px;
     padding: 0 0 20px;
     border-bottom: solid 1px #ddd;
+    font-weight: normal;
 }
 form{
-
-text-align:left;
+text-align:center;
 }
-form input, form select{
+form input{
     padding:8px;
-    margin :10px 0;
+    margin : 25px auto;
+    display: block;
+    border-radius: 30px;
+    border-color: transparent;
+    transition: all 0.5s ease-out;
+}
+form input:hover{
+    padding:8px;
+    margin : 25px auto;
+    display: block;
+    border-radius: 30px;
+    transform: scale(1.1);
+    border-color: transparent;
+
 }
 form label{
 display:block;
 margin: 25px 0;
-font-weight:bold;
+font-size: 20px;
 }
 form input[type="text"]{
     width:90px;
+    font-size: 20px;
+    text-align: center;
 
 }
 button{
-    background:blue;
-    color:white;
-    border-bottom: solid 4px #222;
+    background:white;
+    color:black;
+    border-color: transparent;
     text-transform: uppercase;
-padding: 20px 30px;
-font-size:18px;
-width:100%;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size:20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    width:100%;
 }
 button:hover{
-    background:#4c2827;
-    border-bottom-color:#111;
+    background:gray;
+    color:white;
 }
 button:active{
     position: relative;
@@ -65,18 +84,48 @@ button:active{
     font-size: 50px;
 }
 #totalTip:before{
-    font-size:14px;
+    font-size:30px;
     content:"Tip Amount";
     text-transform:uppercase;
     display:block;
-    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
 }
 #totalTip sup{
-top:-18px;
-    font-size:24px;
+top: 17px;
+position: relative;
+    font-size:50px;
 }
 #totalTip small{
     display:block;
-    font-weight: bold;
-    font-size:14px;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing: 5px;
     }
+form select{
+    margin : 25px auto;
+    display: block;
+    font-size: 15px;
+    background-color: white;
+text-decoration: none;
+width: 200px;
+-webkit-appearance: button;
+height:35px;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+   border-radius: 30px;
+    border-color: transparent;
+    transition: all 0.5s ease-out;
+}
+form select:hover{
+   transform: scale(1.1);
+}
+ @keyframes fadeIn{
+     from{
+       opacity: 0;  
+     }
+     to{
+opacity: 1;
+     }
+ }
