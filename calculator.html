@@ -3,7 +3,7 @@
 <head>
 
 
-<title>How was the service today?</title>
+<title>How was your service?</title>
 <link rel="stylesheet" type="text/css" href="calculator.css">
 <link rel="stylesheet" type="text/css" href="tipcalculator.css">
 </head>
@@ -16,7 +16,7 @@
 
 
 
-<h1>How was your meal?</h1>
+<h1>TIP CALCULATOR</h1>
 
 <div class="" id="calculator">
 
@@ -27,7 +27,7 @@
     <input type="text"  id="billAmount" placeholder="$">
 </label>
 <label>
-    How was your service today?
+    How was your service?
  <select id="serviceQuality" style="
  padding-left: 30px;" >
 
@@ -56,12 +56,23 @@
 </div>
 
 
-<div id="totalTip">
+<div id="totalBill">
+    <sup>$</sup><span id="bill">0.00</span>
+    <small id="eachBill"> Each </small>
 
+</div>
+
+
+<div id="totalTip">
 <sup>$</sup><span id="tip">0.00</span>
 <small id="each"> Each </small>
 
 </div>
+<div id="Alltotal">
+    <sup>$</sup><span id="total">0.00</span>
+    <small id="tot"> Each </small>
+</div>
+
 
 
  </div>   

@@ -5,7 +5,8 @@ background-size:100%;
 background-size: cover;
 font-family: 'Courier New', Courier, monospace;
 color:white;
-overflow: hidden;
+overflow-x: hidden;
+
 
 }
 #container{
@@ -25,6 +26,7 @@ h1{
     padding: 0 0 20px;
     border-bottom: solid 1px #ddd;
     font-weight: normal;
+    letter-spacing: 10px;
 }
 form{
 text-align:center;
@@ -129,3 +131,75 @@ form select:hover{
 opacity: 1;
      }
  }
+
+ #totalBill{
+    margin-top:40px;
+    font-size: 50px;
+}
+#totalBill:before{
+    font-size:30px;
+    content:"Bill Amount";
+    text-transform:uppercase;
+    display:block;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: auto;
+}
+
+
+#totalBill small{
+    display:block;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    }
+    #totalBill{
+        margin-top:40px;
+        font-size: 50px;
+    }
+    #totalBill sup{
+        top: 17px;
+        position: relative;
+            font-size:50px;
+        }
+
+
+
+
+
+
+#Alltotal sup{
+top: 17px;
+position: relative;
+    font-size:50px;
+}
+#Alltotal small{
+    display:block;
+    font-size:30px;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    }
+    #Alltotal{
+        margin-top:40px;
+        font-size: 50px;
+    }
+    #Alltotal:before{
+        font-size:30px;
+        content:"Total Amount";
+        text-transform:uppercase;
+        display:block;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: auto;
+    }
+    #Alltotal sup{
+    top: 17px;
+    position: relative;
+        font-size:50px;
+    }
+    #Alltotalsmall{
+        display:block;
+        font-size:30px;
+        text-transform:uppercase;
+        letter-spacing: 5px;
+        }
