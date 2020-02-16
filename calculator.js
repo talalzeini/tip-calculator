@@ -13,10 +13,15 @@ var billAmount = document.getElementById('billAmount').value;
 var  serviceQuality = document.getElementById('serviceQuality').value;
 var numPeople = document.getElementById('totalPeople').value;
 
-if(billAmount == "" || serviceQuality == 0 || billAmount == 0){
+if(billAmount == "" && serviceQuality == 0 || billAmount == 0){
   window.alert("Please enter some valid numbers in order to calculate your total.");
   return;
 }
+ if(billAmount >= 999999){
+    window.alert("You probably don't have this kind of money. Good Luck.");
+    return;
+  }
+  
 if(numPeople == "" || numPeople <=1){
     numPeople =1;
     document.getElementById('each').style.display = "none";
