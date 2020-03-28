@@ -7,31 +7,38 @@ document.getElementById('eachBill').style.display = "none";
 document.getElementById('Alltotal').style.display = "none";
 document.getElementById('tot').style.display = "none";
 
-function calculateTip() {
+function calculateTip(){
 
 var billAmount = document.getElementById('billAmount').value;
 var  serviceQuality = document.getElementById('serviceQuality').value;
 var numPeople = document.getElementById('totalPeople').value;
 
 if(billAmount == "" && serviceQuality == 0 || billAmount == 0){
-  window.alert("Please enter some valid numbers in order to calculate your total.");
-  return;
+
+        window.alert("Please enter some valid numbers in order to calculate your total.");
+        return;
 }
- if(billAmount >= 999999){
-    window.alert("You probably don't have this kind of money. Good Luck.");
-    return;
-  }
+
+if(billAmount >= 999999){
+
+        window.alert("You probably don't have this kind of money. Good Luck.");
+        return;
+}
   
 if(numPeople == "" || numPeople <=1){
-    numPeople =1;
-    document.getElementById('each').style.display = "none";
-    document.getElementById('eachBill').style.display = "none";
-    document.getElementById('tot').style.display = "none";
+
+        numPeople =1;
+        document.getElementById('each').style.display = "none";
+        document.getElementById('eachBill').style.display = "none";
+        document.getElementById('tot').style.display = "none";
+
 }else{
-    document.getElementById('each').style.display = "block";
-    document.getElementById('eachBill').style.display = "block";
-    document.getElementById('tot').style.display = "block";
+        document.getElementById('each').style.display = "block";
+        document.getElementById('eachBill').style.display = "block";
+        document.getElementById('tot').style.display = "block";
 }
+
+
 var total = (billAmount * serviceQuality) / numPeople;
 total = Math.round(total * 100) / 100;
 total = total.toFixed(2);
@@ -53,6 +60,5 @@ tot = tot.toFixed(2);
 
 document.getElementById('Alltotal').style.display = "block";
 document.getElementById('total').innerHTML = tot;
-
 }
 
