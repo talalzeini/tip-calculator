@@ -18,6 +18,16 @@ if(billAmount == "" && serviceQuality == 0 || billAmount == 0){
         window.alert("Please enter some valid numbers in order to calculate your total.");
         return;
 }
+// if bill amount is not a number
+if(isNaN(document.getElementById('billAmount').value)){
+        window.alert("Please enter a valid bill amount.");
+        return;
+} 
+if((isNaN(numPeople))){
+        window.alert("Please enter a valid number of people.");
+        return;
+} 
+
 
 if(billAmount >= 999999){
 
