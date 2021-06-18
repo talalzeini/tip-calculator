@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+  font-family: "Avenir";
+  color: white;
+  overflow-x: hidden;
+}
+.container {
+  border: 2px solid white;
+  width: 25%;
+  margin: 0px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+}
+h1 {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  display: block;
+  text-align: center;
+  border-bottom: solid 1px #ddd;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+.hide {
+  display: none;
+}
+form {
+  text-align: center;
+  width: 100%;
+  border: 2px solid red;
+}
+form input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 25px auto;
+  display: block;
+  text-align: left;
+  outline: none;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: 0.25s;
+}
+form input:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transition: 0.25s;
+}
+form input[type="text"] {
+  width: 20%;
+  font-size: 16px;
+  text-align: left;
+}
+form input::placeholder {
+  vertical-align: middle;
+}
+form label {
+  display: block;
+  margin: 25px 0;
+  font-size: 20px;
+}
+form select {
+  margin: 25px auto;
+  display: block;
+  font-size: 15px;
+  background-color: white;
+  text-decoration: none;
+  width: 75%;
+  /* -webkit-appearance: button; */
+  outline: none;
+  height: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+  transition: 0.25s;
+}
+
+form select:hover {
+  cursor: pointer;
+  background: #eee;
+  transition: 0.25s;
+}
+button {
+  background: white;
+  color: black;
+  border-color: transparent;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 5px;
+  width: 100%;
+}
+button:hover {
+  background: #eee;
+  cursor: pointer;
+}
+.value {
+  margin-top: 50px;
+  font-size: 40px;
+}
+.value:before {
+  font-size: 25px;
+  display: block;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 10px auto;
+}
+.bill:before {
+  content: "BILL AMOUNT";
+}
+.tip:before {
+  content: "TIP AMOUNT";
+}
+.total:before {
+  content: "TOTAL AMOUNT";
+}
+.value small {
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+@media (min-width: 750px) and (max-width: 1300px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    border: 2px solid transparent;
+    width: 90%;
+    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+  }
+  h1 {
+    padding: 0 0 20px;
+    margin: 20px 0 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    border-bottom: solid 1px #ddd;
+    font-weight: normal;
+    white-space: nowrap;
+    letter-spacing: 0px;
+  }
+  form label {
+    font-size: 15px;
+  }
+  form input {
+    padding-top: 10px;
+    padding-bottom: 7.5px;
+  }
+  form input[type="text"] {
+    width: 25%;
+    line-height: 100%;
+  }
+  form select {
+    width: 100%;
+  }
+  .value {
+    margin-top: 50px;
+    font-size: 35px;
+  }
+  .value:before {
+    font-size: 20px;
+    display: block;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
