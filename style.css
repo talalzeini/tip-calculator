@@ -38,20 +38,21 @@ form input {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 25px auto;
+  background: black;
   display: block;
   text-align: left;
+  color: white;
+  border: none;
+  border-bottom: solid 1px white;
   outline: none;
-  border-radius: 5px;
-  border-color: transparent;
+  border-radius: 0px;
   transition: 0.25s;
 }
 form input:hover {
-  background-color: #eee;
   cursor: pointer;
   transition: 0.25s;
 }
 form input[type="text"] {
-  width: 20%;
   font-size: 16px;
   text-align: left;
 }
@@ -86,15 +87,15 @@ form select:hover {
   transition: 0.25s;
 }
 button {
-  background: white;
+  background: #eee;
   color: black;
   border-color: transparent;
   text-transform: uppercase;
   border-radius: 5px;
-  padding: 20px;
-  font-size: 18px;
-  letter-spacing: 5px;
-  width: 100%;
+  padding: 10px;
+  width: 75%;
+  font-size: 15px;
+  letter-spacing: 2px;
 }
 button:hover {
   background: #eee;
@@ -165,8 +166,8 @@ button:hover {
     padding-bottom: 7.5px;
   }
   form input[type="text"] {
-    width: 25%;
     line-height: 100%;
+    width: 100%;
   }
   form select {
     width: 100%;
@@ -181,5 +182,8 @@ button:hover {
     letter-spacing: 5px;
     text-align: center;
     margin: 10px auto;
+  }
+  button {
+    width: 100%;
   }
 }
